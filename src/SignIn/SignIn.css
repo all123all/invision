@@ -1,0 +1,370 @@
+:root {
+    /* Default Values */
+    --value-solid: solid;
+    --value-none: none;
+    --value-end: end;
+    --font-weight-bold: bold;
+    --font-weight-lighter: lighter;
+    --font-weight-light: 300;
+    --wrap-primary-set: wrap;
+    --text-decoration: none;
+    --absolute-zero: 0;
+    --cursor: pointer;
+    /* Primary Colors */
+    --primary-bg-color: #fff;
+    --primary-text-color: #000;
+    --secondary-text-color: #fff;
+    --primary-color-black: #000;
+    --primary-color-white: #fff;
+    --primary-color-gray: #707070;
+    --primary-color-green: #a9c5ba;
+    --secondary-color-green: #29d398;
+    /* Primary Devices BreackPoints */
+    --media-mw1:  1500px;
+    --media-mw2: 1130px;
+    --media-mw3: 810px;
+    --media-mw4: 562px;
+    --media-mw5: 428px;
+    --media-mw6: 375px;
+    --media-mw7: 360px;
+    /* Sizes */
+    --primary-max-vw: 100vw;
+    --primary-medium-vw: 50vw;
+    --primary-max-vh: 100vh;
+    --primary-medium-vh: 50vh;
+    --primary-max-percent: 100%;
+    --primary-medium-percent: 50%;
+    --primary-display: flex;    
+    /* Flex and Position */
+    --relative-position: relative;
+    --absolute-position: absolute;
+    --column-direction: column;
+    --row-direction: row;
+    --reverse-row-direction: row-reverse;
+    --reverse-column-direction: column-reverse;
+    --value-center: center;
+    --primary-display: flex;
+    --justify-around: space-around;
+    --justify-between: space-between;
+    --justify-evenly: space-evenly;
+    --justify-end: flex-end;
+    --auto-height: auto;
+    /* Header Style */
+    --logo-primary-color: #000;
+    --logo-font-weight: bold;
+    --logo-font-size: 3.5rem;
+    --logo-margin: 10%;
+    --link-margin: 24%;
+    --welcome-primary-color: #000;
+    --welcome-font-weight: bold;
+    --welcome-font-size: 3rem;
+    /* Form Style */
+    --form-primary-color: #696969;
+    --input-primary-width: 50%;
+    --input-font-size: 1.8rem;
+    --input-border: 0 0 2px 0;
+    --input-margin: 18px;
+    --input-padding: 5px 15px 5px 15px;
+    --link-special-margin: 5px;
+    /* Buttons */
+    --btn-border-radius: 50px;
+    --btn-font-size: 1.6rem;
+    --btn-margin-top: 4%;
+    --btn-margin-bottom: 5%;
+    --btn-padding: 15px 70px;
+    --btn-primary-width: 30%;
+    --sign-up-margin-top: 4rem;
+    --primary-shadow: 3px 3px 3px 3px rgba(0,0,0,.25);
+    --primary-shadow-hover: 3px 3px 3px 3px rgba(0,0,0,.35);
+    --btn-margin-bottom: 5%;
+    --btn-google-width: 35px;
+    --btn-google-height: 35px;
+    --btn-google-margin: 8px 0;
+    --btn-google-margin-top: 2%;
+    /* Responsive */
+    --responsive-btn-width-medium: 40%;
+    --responsive-input-width: 70%;
+    --responsive-link-forgot-margin: 24%;
+    --responsive-logo-container-margin: 7%;
+    --responsive-btn-sign-in-width: 55%;
+    --responsive-carousel-margin-bottom: 15%;
+    --responsive-link-margin: 2%;
+    --responsive-google-btn-width: 80%;
+    --responsive-carousel-vh: 65vh;
+    --responsive-terms-container-width: 68%;
+}
+html, body {
+    background-color: var(--primary-bg-color);
+    /* 1rem = 10px */
+    font-size: 62.5%; 
+}
+body, a {
+    font-size: 1.6rem;
+}
+input {
+    border-style: var(--value-solid);
+    width: var(--primary-medium-percent);
+    font-size: var(--input-font-size);
+    border-width: var(--input-border);
+    margin: var(--input-margin);    
+    padding: var(--input-padding);
+    outline: var(--value-none);
+}
+.main-container{
+    width: var(--primary-max-vw);
+    display: var(--primary-display);
+    justify-content: var(--value-center);
+    flex-wrap: var(--wrap-primary-set);
+}
+/* Image Slide */
+.box-slide {
+    background: var(--primary-color-green);
+    position: var(--relative-position);
+    flex: 1;
+    max-width: var(--primary-max-vw);
+    height: var(--primary-max-vh);
+    justify-content: var(--value-center);
+    align-items: var(--value-center);
+    display: var(--primary-display);
+    flex-direction: var(--column-direction);
+}
+.carousel-main-container {
+    display: var(--value-center);
+    justify-content: var(--value-center);
+    align-content: var(--value-center);
+    width: var(--primary-medium-vw);
+    height: var(--primary-max-vh);
+    background-color: var(--primary-color-green);
+}
+.carousel-item {
+    align-self: var(--value-center);
+}
+.carousel-caption {
+    position: var(--absolute-position);
+    bottom: 50px;
+}
+.box-user{
+    background: var(--primary-bg-color);
+    position: var(--relative-position);
+    flex: 1;
+    max-width: var(--primary-max-vw);
+    height: var(--primary-max-vh);
+    justify-content: var(--value-center);
+    align-items: var(--value-center);
+    display: var(--primary-display);
+    flex-direction: var(--column-direction);
+}
+.logo-invision-container {
+    width: var(--primary-max-percent);
+    text-align: var(--value-end);
+}
+.logo-invision-text {
+    font-weight: var(--logo-font-weight);
+    font-size: var(--logo-font-size);
+    margin-right: var(--logo-margin);
+}
+.welcome-message-container {
+    width: var(--primary-max-percent);
+    text-align: var(--value-center);
+}
+.welcome-message-text {
+    font-size: var(--welcome-font-size);
+    font-weight: var(--font-weight-light);
+}
+.form-container {
+    display: var(--primary-display);
+    flex-direction: var(--column-direction);
+    width: var(--primary-max-percent);
+    align-items: var(--value-center);
+    color: var(--form-primary-color);
+}
+.link-forgot-password-container {
+    display: var(--primary-display);
+    width: var(--primary-max-percent);
+    justify-content: var(--justify-end);
+}
+.link-forgot-password {
+    color: var(--secondary-color-green);
+    text-decoration: var(--text-decoration);
+    margin-right: var(--link-margin);
+}
+.link-forgot-password:hover {
+    color: var(--primary-color-green);
+}
+.link-terms-privacy {
+    color: var(--primary-color-green);
+}
+.terms-container {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.terms-container-links {
+    color: var(--secondary-color-green);
+}
+.terms-container-links:hover {
+    color: var(--primary-color-green);
+}
+.btn-sign-in {
+    border-style: var(--value-solid);
+    border-radius: var(--btn-border-radius);
+    background: var(--primary-color-gray);
+    color: var(--secondary-text-color);
+    padding: var(--btn-padding);
+    font-size: var(--btn-font-size);
+    font-weight: var(--font-weight-bold);
+    margin-top: var(--btn-margin-top);
+    width: var(--btn-primary-width);
+}
+.sign-up-container {
+    display: var(--primary-display);
+    flex-direction: var(--row-direction);
+    width: var(--primary-max-percent);
+    justify-content: var(--value-center);
+    margin-bottom: var(--btn-margin-bottom);
+}
+.router-link {
+    color: var(--secondary-color-green);
+    margin-left: var(--responsive-link-margin);
+}
+.router-link:hover{
+    color: var(--primary-color-green);
+}
+.btn-google {
+    background-color: var(--primary-color-white);
+    border-radius: var(--btn-border-radius);
+    border: var(--absolute-zero);
+    box-shadow: var(--primary-shadow);
+    cursor: var(--cursor);
+    display: var(--primary-display);
+    justify-content: var(--justify-evenly);
+    align-items: var(--value-center);
+    width: var(--btn-primary-width);
+    margin-bottom: var(--btn-margin-bottom);
+}
+.btn-google:hover {
+    box-shadow: var(--primary-shadow-hover);
+}
+.btn-google-icon {
+    width: var(--btn-google-width);
+    height: var(--btn-google-height);
+    border-radius: var(--btn-border-radius);
+    background-color: var(--primary-color-white);
+    margin: var(--btn-google-margin);
+}
+.btn-google-text {
+    color: var(--primary-text-color);
+    font-size: var(--btn-font-size);
+    margin-top: var(--btn-google-margin-top);
+}
+
+@media(max-width:1500px) {
+    .btn-sign-in {
+        width: var(--responsive-btn-width-medium);
+    }
+    .btn-google {
+        width: var(--responsive-btn-width-medium);
+    }
+    .carousel-main-container {
+        height: var(--primary-max-vh);        
+    }
+    a {
+        margin-bottom: var(--responsive-link-margin);
+    }
+    .terms-container {
+        width: var(--primary-medium-percent);
+    }
+}
+@media (max-width:1130px) {
+    .box {
+        flex: var(--primary-max-vw);
+        max-width: var(--primary-max-vw);
+        max-height: var(--primary-medium-vh);
+    }
+    .main-container {
+        flex-direction: var(--reverse-column-direction);
+    }
+    input {
+        width: var(--responsive-input-width);
+    }
+    .link-forgot-password-container {
+        text-align: var(--value-center);
+        justify-content: var(--value-center);
+    }
+    .link-forgot-password {
+        margin-left: var(--responsive-link-forgot-margin);
+    }
+    .carousel-main-container {
+        display: var(--primary-display);
+        justify-content: var(--value-center);
+        align-content: var(--value-center);
+        width: var(--primary-max-vw);
+        height: var(--auto-height);
+    }
+    .logo-invision-container {
+        margin-top: var(--responsive-logo-container-margin);
+    }
+}
+@media(max-width:810px) {
+    .logo-invision-container {
+        margin-top: var(--responsive-logo-container-margin);
+    }
+}
+@media(max-width:562px) {
+    .btn-google {
+        width: var(--primary-medium-percent);
+    }
+    input {
+        width: var(--responsive-input-width);
+    }
+    .btn-sign-in {
+        width: var(--responsive-btn-sign-in-width);
+    }
+    .carousel-main-container {
+        display: var(--primary-display);
+        flex-direction: var(--column-direction);
+        width: var(--primary-max-vw);
+        height: var(--primary-medium-vh);
+    }
+    .carousel-img {
+        width: var(--primary-max-percent);
+        margin-bottom: var(--responsive-carousel-margin-bottom);
+    }
+    .logo-invision-container {
+        display: var(--value-none);
+    }
+    .welcome-message-container {
+        margin-top: var(--btn-margin-top);
+    }
+}
+@media(max-width:428px) {
+    .btn-google {
+        width: var(--responsive-google-btn-width);
+    }
+    .logo-invision-container {
+        display: var(--value-none);
+    }
+    .terms-container {
+        width: var(--responsive-terms-container-width);
+    }
+}
+@media(max-width:375px) {
+    .carousel-img {
+        width: var(--primary-max-percent);
+        margin-bottom: var(--responsive-carousel-margin-bottom);
+    }
+    .carousel-main-container {
+        height: var(--responsive-carousel-vh);
+    }
+    .logo-invision-container {
+        display: var(--value-none);
+    }
+}
+@media(max-width:360px) {
+    .btn-sign-in {
+        width: var(--responsive-btn-sign-in-width) + 10;
+    }
+    .logo-invision-container {
+        display: var(--value-none);
+    }
+}

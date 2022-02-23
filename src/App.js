@@ -1,8 +1,14 @@
 import SignInScreen from './SignIn/SignIn';
+import SignUpScreen from './SignUp/SignUp';
+import {BrowserRouter as Router} from "react-router-dom";
 
-function App() {
+import Routes from './routes';
+
+const App = () => {
   return (
-    <SignInScreen />
+    <Router>
+      <Routes />
+    </Router>
   );
 }
 

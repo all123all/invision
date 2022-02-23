@@ -9,6 +9,10 @@
     --line-height: 1px;
     --line-width: 10vw;
     --line-responsive-width: 25vw;
+    /* Media Querys */
+    --max-width-full: 1110px;
+    --max-width-semi: 498px;
+    --max-width-min: 375px;
 }
 .line-container {
     display: var(--primary-display);
@@ -25,6 +29,7 @@
 .line-text {
     color: var(--color-gray);
     margin: var(--line-text-margin);
+    font-size: 16px;
 }
 @media (max-width:1110px){    
     .line {
